@@ -34,6 +34,31 @@
         <img class="manga-page" src="manga/Crimson Hunt/Chapter 1/0009.png" alt="Page 9">
         <img class="manga-page" src="manga/Crimson Hunt/Chapter 1/0010.png" alt="Page 10">
     </div>
+  <div class="sidebar">
+    <h2>Navigation</h2>
+    
+    <!-- CHAPTER SELECTION -->
+    <div>
+        <h3>CHAPTER</h3>
+        <select onchange="location = this.value;">
+            <option value="index.html" selected>Chapter 1</option>
+            <option value="chapter2.html">Chapter 2</option>
+            <option value="chapter3.html">Chapter 3</option> <!-- New Chapter -->
+        </select>
+    </div>
+
+    <!-- PAGE SELECTION -->
+    <div>
+        <h3>PAGE</h3>
+        <select onchange="document.getElementById(this.value).scrollIntoView({behavior: 'smooth'});">
+            <option value="page1">Page 1</option>
+            <option value="page2">Page 2</option>
+            <option value="page3">Page 3</option>
+            <option value="page4">Page 4</option> <!-- New Page -->
+            <option value="page5">Page 5</option> <!-- New Page -->
+        </select>
+    </div>
+</div>
 
 </body>
 </html>
