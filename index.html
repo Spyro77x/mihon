@@ -9,6 +9,23 @@
         .manga-container { max-width: 800px; margin: 0 auto; }
         .manga-page { width: 100%; display: block; margin-bottom: 10px; }
         select { padding: 10px; background: #333; color: white; border: 1px solid #555; font-size: 16px; margin-bottom: 20px; cursor: pointer; }
+      /* Next Chapter Button Styling */
+        .next-chapter-btn {
+            display: inline-block;
+            background-color: #ff4a5a; /* Cool red color */
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 15px 40px;
+            margin: 40px auto 20px auto;
+            border-radius: 30px;
+            transition: background 0.2s ease;
+        }
+
+        .next-chapter-btn:hover {
+            background-color: #e03b4a; /* Darker red when hovered */
+        }
     </style>
 </head>
 <body>
@@ -33,9 +50,10 @@
         <img class="manga-page" src="manga/Crimson Hunt/Chapter 1/0008.png" alt="Page 8">
         <img class="manga-page" src="manga/Crimson Hunt/Chapter 1/0009.png" alt="Page 9">
         <img class="manga-page" src="manga/Crimson Hunt/Chapter 1/0010.png" alt="Page 10">
+      <!-- NEXT CHAPTER BUTTON START -->
+            <a href="chapter2.html" class="next-chapter-btn">Next Chapter →</a>
+            <!-- NEXT CHAPTER BUTTON END -->
     </div>
-  <div class="sidebar">
-    <h2>Navigation</h2>
 
      
     
